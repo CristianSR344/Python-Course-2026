@@ -1,0 +1,5 @@
+[
+  {"id": 1, "name": "Ana Cruz", "email": "ana@example.com", "department": "Support", "active": true},
+  {"id": 2, "name": "Ben Ito", "email": "ben@example.com", "department": "Sales", "active": false}
+]
+

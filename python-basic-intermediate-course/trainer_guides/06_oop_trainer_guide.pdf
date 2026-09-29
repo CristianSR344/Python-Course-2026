@@ -1,0 +1,197 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 3863 >>
+stream
+BT
+/F1 10 Tf
+0.12 0.18 0.30 rg
+54 744 Td
+0 -22 Td
+/F1 20 Tf
+0.10 0.28 0.52 rg
+(Session 5: Object-Oriented Programming) Tj
+0 -13 Td
+/F1 11 Tf
+0.12 0.14 0.18 rg
+(Trainer Reference Guide) Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Purpose and outcomes) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(Model cohesive data and behavior with classes/objects, __init__, methods, class) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    attributes, __str__, encapsulation, inheritance, composition, and simple polymorphism.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Examples and exercises) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- 01_classes_objects.ipynb creates User instances and guides active-state behavior.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- models/user.py encapsulates normalized user state; Employee\(User\) adds employee) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    ID/department; Notification and EmailNotification share a send interface.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- 02_encapsulation.py changes ticket status only through a validated method.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- 03_inheritance_composition.ipynb composes TicketService with a replaceable notifier.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- exercise_01_user_class.py is guided. exercise_02_employee.py independently applies) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    inheritance/super. challenge_notifications_tickets.py combines required classes.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- ticket_system.py is Project 5: Ticket, Agent, polymorphic Notification, and a composed) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    TicketManager.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Trainer key points specific to this module) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(Use ?is-a? for inheritance and ?uses-a/has-a? for composition. Show why `_status`) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    signals controlled access. Watch forgotten `self`, mutable class state, missing) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    `super\(\)`, and inheritance used only to reuse code.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Portal connection and evidence) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(UserService composes repository and email service. Learners can swap a notifier without) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    editing ticket logic.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Delivery pattern) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(1. Explain the idea briefly and ask learners to predict a result.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(2. Run the simple example, then connect it to an employee/user workflow.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(3. Pair learners for the guided task; require an individual attempt next.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(4. Use the challenge as the cumulative project increment.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(5. Review the quiz and ask learners to explain, not only show, their code.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Trainer key points) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Keep live coding visible and deliberate. Normalize reading tracebacks.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Ask what type and value each expression produces before running it.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Let TODO files remain student-owned; open solutions only during review.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Check boundary and failure cases, not only the happy path.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- End by tracing how the topic appears in the final portal.) Tj
+0 -18 Td
+/F1 8 Tf
+0.4 0.4 0.4 rg
+(Python Course 2026  |  06_oop  |  Page 1 of 1) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000317 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+4232
+%%EOF

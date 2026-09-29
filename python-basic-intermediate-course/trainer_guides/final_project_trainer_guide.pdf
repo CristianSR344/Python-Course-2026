@@ -1,0 +1,284 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 4390 >>
+stream
+BT
+/F1 10 Tf
+0.12 0.18 0.30 rg
+54 744 Td
+0 -22 Td
+/F1 20 Tf
+0.10 0.28 0.52 rg
+(Session 6C: User Management and Notification Portal) Tj
+0 -13 Td
+/F1 11 Tf
+0.12 0.14 0.18 rg
+(Trainer Reference Guide) Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Purpose and outcomes) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(Integrate Python fundamentals, validation, collections, functions, OOP, HTTP, templates,) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    SQLite, CRUD, email, environment variables, and tests in an administrative) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    application.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Architecture walkthrough) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(Browser/API client -> FastAPI router -> UserService -> UserRepository ->) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    SQLAlchemy/SQLite. UserService also composes EmailService, which uses SMTP when) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    completely configured and writes a timestamped text message otherwise. Schemas) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    validate boundary input; the SQLAlchemy model represents persisted state.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Required project workflows) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Dashboard: total, active, inactive, department count, and five recent users.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- HTML: register, confirmation, searchable table, details, edit, delete with confirmation.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- JSON API: list/detail/create/update/delete with 200/201/204/404/409/422 behavior.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- User fields: names, email, department, role, active, creation timestamp, plus optional) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    phone, employee ID, comments.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Operations: initialize data/app.db, keep credentials in .env, log simulated email under) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    logs/emails, run pytest.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Exercise/checkpoint sequence) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(1. Launch `/health` and `/docs`; identify every layer for GET `/api/users`.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(2. Create a user in Swagger, then find it in the HTML list and database-backed) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    dashboard.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(3. Search by each supported field; edit status/department; inspect detail output.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(4. Delete the record and verify both UI and API return the expected result.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(5. Run without SMTP, inspect the email text file, and explain the fallback.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(6. Run tests/test_users.py and tests/test_email_service.py; trace one failure if) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    introduced.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Trainer key points specific to this module) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(Run Uvicorn from `final_project`, never expose `.env`, and keep SQL outside handlers.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    Trace one request end to end before learners change code. Distinguish model) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    \(database\), schema \(boundary contract\), repository \(persistence\), service \(workflow\),) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    and router \(HTTP\). Assess functionality first, then readability and presentation.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Completion evidence) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(All HTML/API CRUD paths work, invalid/duplicate input is handled, SQLite initializes,) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    fallback email is readable, tests pass, and the learner can explain composition in) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    UserService.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Delivery pattern) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(1. Explain the idea briefly and ask learners to predict a result.) Tj
+0 -18 Td
+/F1 8 Tf
+0.4 0.4 0.4 rg
+(Python Course 2026  |  final_project  |  Page 1 of 2) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1233 >>
+stream
+BT
+/F1 10 Tf
+0.12 0.18 0.30 rg
+54 744 Td
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(2. Run the simple example, then connect it to an employee/user workflow.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(3. Pair learners for the guided task; require an individual attempt next.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(4. Use the challenge as the cumulative project increment.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(5. Review the quiz and ask learners to explain, not only show, their code.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Trainer key points) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Keep live coding visible and deliberate. Normalize reading tracebacks.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Ask what type and value each expression produces before running it.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Let TODO files remain student-owned; open solutions only during review.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Check boundary and failure cases, not only the happy path.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- End by tracing how the topic appears in the final portal.) Tj
+0 -18 Td
+/F1 8 Tf
+0.4 0.4 0.4 rg
+(Python Course 2026  |  final_project  |  Page 2 of 2) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000197 00000 n 
+0000000323 00000 n 
+0000004765 00000 n 
+0000004891 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+6176
+%%EOF

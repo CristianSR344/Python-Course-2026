@@ -1,0 +1,189 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 3566 >>
+stream
+BT
+/F1 10 Tf
+0.12 0.18 0.30 rg
+54 744 Td
+0 -22 Td
+/F1 20 Tf
+0.10 0.28 0.52 rg
+(Session 6A: HTTP, FastAPI, and Pydantic) Tj
+0 -13 Td
+/F1 11 Tf
+0.12 0.14 0.18 rg
+(Trainer Reference Guide) Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Purpose and outcomes) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(Explain client/server exchange, routes, HTTP methods/status codes, JSON, request) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    schemas, and automatic API documentation.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Examples and exercises) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- 01_http_json_api.ipynb maps actions to GET/POST/PUT/DELETE and status codes 200, 201,) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    204, 404.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- 02_fastapi_basics.py exposes root/list/create/detail routes over an in-memory list and) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    returns 404 for missing users.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- 03_pydantic_models.py validates required text, EmailStr, and an age range.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- exercise_01_routes.py is guided health/departments routing. exercise_02_schema.py) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    independently constrains a ticket. challenge_user_api.py completes in-memory CRUD.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Trainer key points specific to this module) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(Use Swagger `/docs` as an interactive client and inspect request/response bodies.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    Distinguish route parameters, query parameters, forms, and JSON. Explain 422 as useful) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    validation feedback and 404 as a resource result, not a server crash.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Portal connection and evidence) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(Learners can create valid JSON, interpret rejected input, and select correct) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    methods/statuses before adding persistence.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Delivery pattern) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(1. Explain the idea briefly and ask learners to predict a result.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(2. Run the simple example, then connect it to an employee/user workflow.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(3. Pair learners for the guided task; require an individual attempt next.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(4. Use the challenge as the cumulative project increment.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(5. Review the quiz and ask learners to explain, not only show, their code.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Trainer key points) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Keep live coding visible and deliberate. Normalize reading tracebacks.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Ask what type and value each expression produces before running it.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Let TODO files remain student-owned; open solutions only during review.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Check boundary and failure cases, not only the happy path.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- End by tracing how the topic appears in the final portal.) Tj
+0 -18 Td
+/F1 8 Tf
+0.4 0.4 0.4 rg
+(Python Course 2026  |  07_web_api_intro  |  Page 1 of 1) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000317 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3935
+%%EOF

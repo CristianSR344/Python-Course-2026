@@ -1,0 +1,28 @@
+:root { color-scheme: light; font: 16px/1.5 system-ui, sans-serif; color: #172033; background: #f5f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+header { background: #182744; padding: 1rem; }
+nav { max-width: 1100px; margin: auto; display: flex; gap: 1.2rem; flex-wrap: wrap; }
+nav a { color: white; text-decoration: none; }
+main { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+.heading { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; }
+.cards article, form, dl { background: white; border: 1px solid #dbe1ec; border-radius: .5rem; padding: 1rem; }
+.cards strong { display: block; font-size: 2rem; color: #3157a4; }
+.cards span { color: #5b6475; }
+.button, button { display: inline-block; background: #3157a4; color: white; border: 0; border-radius: .3rem; padding: .55rem .85rem; text-decoration: none; cursor: pointer; }
+.danger { background: #a52a2a; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { padding: .7rem; border-bottom: 1px solid #dbe1ec; text-align: left; }
+.status { border-radius: 1rem; padding: .15rem .5rem; }
+.status.active { background: #d7f5df; }.status.inactive { background: #eee; }
+.search label { display: block; margin-bottom: .4rem; }.search div { display: flex; gap: .5rem; }
+.search input { flex: 1; }
+.user-form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+label { font-weight: 600; } input, textarea { width: 100%; margin-top: .25rem; padding: .55rem; border: 1px solid #aeb7c7; border-radius: .25rem; }
+.checkbox input { width: auto; }.wide { grid-column: 1 / -1; } textarea { min-height: 7rem; }
+dl { display: grid; grid-template-columns: 10rem 1fr; } dt { font-weight: 700; } dd { margin: 0 0 .6rem; }
+.alert { background: #ffe1e1; padding: .8rem; }.success { background: #d7f5df; padding: .8rem; }
+@media (max-width: 650px) { .user-form { grid-template-columns: 1fr; } .wide { grid-column: auto; } dl { grid-template-columns: 1fr; } }
+

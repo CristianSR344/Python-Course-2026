@@ -1,0 +1,5 @@
+id,name,email,department,active
+1,Ana Cruz,ana@example.com,Support,true
+2,Ben Ito,ben@example.com,Sales,false
+3,Cara Fox,cara@example.com,Support,true
+

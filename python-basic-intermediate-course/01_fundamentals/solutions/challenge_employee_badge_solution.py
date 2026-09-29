@@ -1,0 +1,10 @@
+first = input("First name: ").strip().title()
+last = input("Last name: ").strip().title()
+employee_id = input("Employee ID: ").strip().upper()
+department = input("Department: ").strip().title()
+print("+------------------------------+")
+print(f"| {first + ' ' + last:<28} |")
+print(f"| ID: {employee_id:<24} |")
+print(f"| Department: {department:<16} |")
+print("+------------------------------+")
+

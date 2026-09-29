@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}{{ user.full_name }} · User Portal{% endblock %}
+{% block content %}
+{% if created %}<p class="success">User registered. A welcome email was sent or saved to the development log.</p>{% endif %}
+<div class="heading"><h1>{{ user.full_name }}</h1><a class="button" href="/users/{{ user.id }}/edit">Edit</a></div>
+<dl><dt>ID</dt><dd>{{ user.id }}</dd><dt>Employee ID</dt><dd>{{ user.employee_id or 'Not provided' }}</dd><dt>Email</dt><dd>{{ user.email }}</dd><dt>Department</dt><dd>{{ user.department }}</dd><dt>Role</dt><dd>{{ user.role }}</dd><dt>Status</dt><dd>{{ 'Active' if user.active else 'Inactive' }}</dd><dt>Phone</dt><dd>{{ user.phone or 'Not provided' }}</dd><dt>Created</dt><dd>{{ user.created_at }}</dd><dt>Comments</dt><dd>{{ user.comments or 'None' }}</dd></dl>
+<form method="post" action="/users/{{ user.id }}/delete" data-confirm="Delete {{ user.full_name }}?"><button class="danger">Delete user</button></form>
+{% endblock %}
+

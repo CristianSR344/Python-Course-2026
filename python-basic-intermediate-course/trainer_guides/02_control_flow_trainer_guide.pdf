@@ -1,0 +1,197 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 3794 >>
+stream
+BT
+/F1 10 Tf
+0.12 0.18 0.30 rg
+54 744 Td
+0 -22 Td
+/F1 20 Tf
+0.10 0.28 0.52 rg
+(Session 2: Conditions and Loops) Tj
+0 -13 Td
+/F1 11 Tf
+0.12 0.14 0.18 rg
+(Trainer Reference Guide) Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Purpose and outcomes) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(Translate business rules into if/elif/else branches and process repeated work with for,) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    range, while, break, and continue.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Examples and exercises) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- 01_conditionals.ipynb validates age/active state and guides department classification.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- 02_for_loops.ipynb numbers users and models bounded attempts. Guided work skips inactive) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    records and stops at a target ID.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- 03_while_loops.py implements a three-attempt PIN workflow with clear remaining-attempt) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    feedback.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- exercise_01_age_validation.py covers invalid, minor, and adult boundaries.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- exercise_02_process_users.py skips blank entries while preserving correct numbering.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- challenge_access_system.py is Project 2: validate role and active status repeatedly,) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    allow quitting, and explain denial.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Trainer key points specific to this module) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(Have learners state rules in plain language before code. Draw branch paths and dry-run) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    one loop iteration at a time. Test ages -1, 17, and 18. Watch indentation, `=` versus) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    `==`, conditions that can never run, and infinite while loops.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Portal connection and evidence) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(Validation controls registration; loops process database results. Learners should) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(    demonstrate accepted, rejected, invalid, and quit paths.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Delivery pattern) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(1. Explain the idea briefly and ask learners to predict a result.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(2. Run the simple example, then connect it to an employee/user workflow.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(3. Pair learners for the guided task; require an individual attempt next.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(4. Use the challenge as the cumulative project increment.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(5. Review the quiz and ask learners to explain, not only show, their code.) Tj
+0 -13 Td
+/F1 6 Tf
+0.12 0.14 0.18 rg
+() Tj
+0 -18 Td
+/F1 13 Tf
+0.10 0.28 0.52 rg
+(Trainer key points) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Keep live coding visible and deliberate. Normalize reading tracebacks.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Ask what type and value each expression produces before running it.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Let TODO files remain student-owned; open solutions only during review.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- Check boundary and failure cases, not only the happy path.) Tj
+0 -13 Td
+/F1 10 Tf
+0.12 0.14 0.18 rg
+(- End by tracing how the topic appears in the final portal.) Tj
+0 -18 Td
+/F1 8 Tf
+0.4 0.4 0.4 rg
+(Python Course 2026  |  02_control_flow  |  Page 1 of 1) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000317 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+4163
+%%EOF

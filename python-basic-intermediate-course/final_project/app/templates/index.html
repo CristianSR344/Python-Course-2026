@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Dashboard · User Portal{% endblock %}
+{% block content %}
+<h1>Dashboard</h1>
+<section class="cards">
+  <article><strong>{{ stats.total }}</strong><span>Total users</span></article>
+  <article><strong>{{ stats.active }}</strong><span>Active</span></article>
+  <article><strong>{{ stats.inactive }}</strong><span>Inactive</span></article>
+  <article><strong>{{ stats.departments }}</strong><span>Departments</span></article>
+</section>
+<h2>Recently registered</h2>
+{% if stats.recent %}<ul>{% for user in stats.recent %}<li><a href="/users/{{ user.id }}">{{ user.full_name }}</a> — {{ user.department }}</li>{% endfor %}</ul>
+{% else %}<p>No users yet. <a href="/users/new">Register the first user</a>.</p>{% endif %}
+{% endblock %}
+
